@@ -1,0 +1,24 @@
+.field_for_game{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: min-content;
+    background-color: rgb(52, 185, 202);
+}
+.cells {
+    align-content: space-between;
+    border: solid 1px black;
+}
+
+.cells div {
+    width: 40px;
+    height: 40px;
+    border: solid 1px black;
+}
+
+.active_cells {
+    background-color:rgb(20, 10, 161);   
+}
+.active_cells_user{
+    background-color: rgb(14, 23, 102);
+}
