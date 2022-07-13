@@ -1,24 +1,32 @@
-.field_for_game{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    width: min-content;
-    background-color: rgb(52, 185, 202);
+.page {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
 }
+
+.field_for_game {
+  display: flex;
+  flex-direction: row;
+  margin: 20% auto;
+  width: min-content;
+  background-color: rgb(52, 185, 202);
+}
+
 .cells {
-    align-content: space-between;
-    border: solid 1px black;
+  align-content: space-between;
+  border: solid 1px black;
 }
 
 .cells div {
-    width: 40px;
-    height: 40px;
-    border: solid 1px black;
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
 }
 
 .active_cells {
-    background-color:rgb(20, 10, 161);   
+  background-color: red;
 }
-.active_cells_user{
-    background-color: rgb(14, 23, 102);
+
+.active_cells_user {
+  background-color: rgb(14, 23, 102);
 }
