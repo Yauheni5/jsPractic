@@ -1,20 +1,44 @@
 .page {
-  width: 100%;
+  max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
+  padding: 50px;
 }
 
 .field_for_game {
+  position: relative;
   display: flex;
   flex-direction: row;
-  margin: 20% auto;
+  margin: 70px auto;
   width: min-content;
   background-color: rgb(52, 185, 202);
+}
+
+.button_startGame {
+  display: block;
+  margin: auto;
+}
+
+.title-board {
+  position: absolute;
+  top: -40%;
+  right: 0%;
+  width: 100%;
+}
+
+.text-answer {
+  background-color: transparent;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
 }
 
 .cells {
   align-content: space-between;
   border: solid 1px black;
+  cursor: pointer;
 }
 
 .cells div {
