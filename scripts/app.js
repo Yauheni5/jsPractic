@@ -40,6 +40,7 @@ createFieldForGames(x, y);
 
 buttonNewGame.addEventListener("click", () => {
   createFieldForGames(x, y);
+  getRandomInt(min, max);
   addClassRandomElement(resultQuestion);
 });
 
