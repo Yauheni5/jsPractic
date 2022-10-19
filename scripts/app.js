@@ -39,15 +39,14 @@ function createFieldForGames(x, y) {
 createFieldForGames(x, y);
 
 buttonNewGame.addEventListener("click", () => {
+  resultQuestion=[];
   createFieldForGames(x, y);
-  getRandomInt(min, max);
   addClassRandomElement(resultQuestion);
 });
 
 //функция для рандомного задания(нужно запомнить ячейки выделенные красным цветом).
 
 function getRandomInt(min, max) {
-  resultQuestion=[];
   for (resultQuestion; resultQuestion.length < memoryNumber; ) {
     numberRandomX = Math.floor(Math.random() * (max - min + 1)) + min;
     numberRandomY = Math.floor(Math.random() * (max - min + 1)) + min;
