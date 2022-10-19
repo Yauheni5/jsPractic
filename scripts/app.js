@@ -11,7 +11,7 @@ const y = 5; //Y - количество столбцов в таблице иг�
 
 //функция для создания поля для игры, где X - количество строк, Y-количество столбцов
 let titleBoard = document.createElement("h2");
-titleBoard.textContent = "Запоминай и повторяй";
+titleBoard.textContent = "Memorize and repeat";
 titleBoard.classList = "title-board";
 
 function createFieldForGames(x, y) {
@@ -109,11 +109,11 @@ function functionForClickMemory(stringTwoForBoard) {
         answerResult.classList = 'text-answer';
         for (let i = 0; i < resultQuestion.length; i++) {
           if (resultQuestion[i] !== resultUserAnswer[i]) {
-            answerResult.textContent = "Получится в следующий раз";
+            answerResult.textContent = "Try again!";
             return playBoard.append(answerResult);
           } else {
             if (i === resultQuestion.length - 1) {
-              answerResult.textContent = "Молодец!";
+              answerResult.textContent = "Good!";
               return playBoard.append(answerResult);
             }
           }
